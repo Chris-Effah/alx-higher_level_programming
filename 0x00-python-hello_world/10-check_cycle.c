@@ -7,21 +7,21 @@
 int check_cycle(listint_t *list)
 {
 	listint_t *slow = list;
-	listint_t *fast = list->next;
+	listint_t *fast = list;
 
-	if (list == NULL)
+	if (!list)
 	{
 		return (0);
 	}
 
 	while (fast && slow && fast->next)
 	{
+		slow = slow->next;
+		fast = fast->next->next;
 		if (slow == fast)
 		{
 			return (1);
 		}
-		slow = slow->next;
-		fast = fast->next->next;
 	}
 	return (0);
 }
