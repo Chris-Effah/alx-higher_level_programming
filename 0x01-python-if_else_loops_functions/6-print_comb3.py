@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for tens_digit in range(9):
-    for ones_digit in range(tens_digit+1, 10):
-        print("{:02d}".format(tens_digit * 10 + ones_digit), end=", ")
-print("{:02d}".format(89))
+for digit1 in range(10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 != digit2:
+            print("{}{}".format(digit1, digit2), end=", ")
