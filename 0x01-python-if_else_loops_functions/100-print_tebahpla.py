@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-for char_code in range(ord('Z'), ord('A') - 1, - 1):
-    print("{}".format(chr(char_code).lower() if char_code % 2 == 1
-                    else chr(char_code).upper()), end="")
+for c in range(ord('Z'), ord('A') - 1, - 1):
+    print("{}".format(chr(c + 32 if c % 2 == 0 else c)), end="")
