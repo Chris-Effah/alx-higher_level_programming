@@ -7,7 +7,8 @@ if __name__ == "__main__":
             print("0 arguments.")
             return
 
-        print(f"{num_args}argument{'s' if num_args > 1 else ''}:")
+        print(f"{num_args} argument{'s' if num_args > 1 else ''}:")
         for i, arg in enumerate(argv):
            print(f"{i + 1}: {arg}")
-        print_arguments(sys.argv[1:])
+if __name__ == "__main__":
+        print_arguments(sys.argv[1: ])
