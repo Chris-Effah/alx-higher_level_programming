@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+
 import sys
 from calculator_1 import add, sub, mul, div
 
 def calculator(a, operator, b):
-
     if operator == '+':
         result = add(a, b)
     elif operator == '-':
@@ -18,6 +18,7 @@ def calculator(a, operator, b):
 
     print(f"{a} {operator} {b} = {result}")
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -26,4 +27,6 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     operator = sys.argv[2]
     b = int(sys.argv[3])
+
+
     calculator(a, operator, b)
