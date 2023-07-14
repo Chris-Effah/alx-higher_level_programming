@@ -2,6 +2,7 @@
 if __name__ == "__main__":
     import sys
     def print_arguments(argv):
+
         num_args = len(argv)
 
         if num_args == 0:
@@ -14,4 +15,3 @@ if __name__ == "__main__":
 
 if __name__ == "__main__":
     print_arguments(sys.argv[1:])
-
