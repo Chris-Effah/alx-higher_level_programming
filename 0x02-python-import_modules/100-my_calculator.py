@@ -4,6 +4,7 @@ import sys
 from calculator_1 import add, sub, mul, div
 
 def calculator(a, operator, b):
+
     if operator == '+':
         result = add(a, b)
     elif operator == '-':
@@ -20,6 +21,7 @@ def calculator(a, operator, b):
 
 
 if __name__ == "__main__":
+
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
