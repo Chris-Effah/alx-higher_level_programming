@@ -3,6 +3,7 @@ import sys
 from calculator_1 import add, sub, mul, div
 
 def calculator(a, operator, b):
+
     if operator == '+':
         result = add(a, b)
     elif operator == '-':
