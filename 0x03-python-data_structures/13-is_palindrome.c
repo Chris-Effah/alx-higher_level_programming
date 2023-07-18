@@ -6,7 +6,9 @@
   */
 int is_palindrome(listint_t **head)
 {
-	if (*head == NULL)
+	int n = 0;
+
+	if (*head == NULL || n == 0)
 	{
 		return (1);
 	}
