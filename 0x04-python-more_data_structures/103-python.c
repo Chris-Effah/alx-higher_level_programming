@@ -25,6 +25,7 @@ void print_python_list(PyObject *p)
 	{
 		PyObject *item = PyList_GetItem(p, i);
 		const char *itemType = item->ob_type->tp_name;
+
 		printf("Element %ld: %s\n", i, itemType);
 	}
 }
