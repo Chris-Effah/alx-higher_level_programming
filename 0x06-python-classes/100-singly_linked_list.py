@@ -30,7 +30,7 @@ class Node:
     @next_node.setter
     def next_node(self, value):
         if value is not None and not isinstance(value, Node):
-            raise TypeError("ext_node must be a Node object")
+            raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
@@ -66,4 +66,4 @@ class SinglyLinkedList:
         while current_node is not None:
             output += str(current_node.data) + "\n"
             current_node = current_node.next_node
-        return output
+        return output.strip()
