@@ -9,7 +9,10 @@ class MagicClass:
     """represents a circle"""
 
     def __init___(self, radius=0):
-        """initialzing a new MagicClass"""
+        """initialzing a new MagicClass
+
+        Arg: radius: radius of a circle
+        """
 
         self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
