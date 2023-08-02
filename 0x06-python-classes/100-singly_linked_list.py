@@ -34,8 +34,6 @@ class Node:
         self.__next_node = value
 
 
-"""define a singly linked list"""
-
 
 class SinglyLinkedList:
     """represents a singly linked list"""
@@ -44,7 +42,7 @@ class SinglyLinkedList:
         """initializing the head of the list"""
         self.head = None
 
-    def sorted_inserted(self, value):
+    def sorted_insert(self, value):
         """inserts a new node"""
         new_node = Node(value)
 
