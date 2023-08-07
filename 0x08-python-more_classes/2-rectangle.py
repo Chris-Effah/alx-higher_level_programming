@@ -4,6 +4,8 @@
 
 
 class Rectangle:
+    """represents a new rectangle"""
+
     def __init__(self, width=0, height=0):
         """initializing a new rectangle, width and height
         Args:
