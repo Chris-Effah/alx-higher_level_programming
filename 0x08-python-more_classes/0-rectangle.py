@@ -2,5 +2,6 @@
 
 """a class called Rectangle"""
 
+
 class Rectangle:
     pass
