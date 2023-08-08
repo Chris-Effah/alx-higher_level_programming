@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def is_safe(board, row, col, N):
     # Check if there is a queen in the same column
     for i in range(row):
@@ -19,11 +20,13 @@ def is_safe(board, row, col, N):
 
     return True
 
+
 def solve_nqueens(N):
     board = [[0 for _ in range(N)] for _ in range(N)]
     solutions = []
     solve_util(board, 0, N, solutions)
     return solutions
+
 
 def solve_util(board, row, N, solutions):
     if row == N:
@@ -36,11 +39,13 @@ def solve_util(board, row, N, solutions):
             solve_util(board, row + 1, N, solutions)
             board[row][col] = 0
 
+
 def print_solutions(solutions):
     for board in solutions:
         for row in board:
             print(" ".join("Q" if cell == 1 else "." for cell in row))
         print()
+
 
 def main():
     if len(sys.argv) != 2:
@@ -60,6 +65,6 @@ def main():
     solutions = solve_nqueens(N)
     print_solutions(solutions)
 
+
 if __name__ == "__main__":
     main()
-
