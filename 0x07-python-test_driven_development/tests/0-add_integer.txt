@@ -28,3 +28,10 @@ adding an integer and a string
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
+
+Passing None
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
