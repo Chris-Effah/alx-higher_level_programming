@@ -1,9 +1,0 @@
-the add_integer module
-
-using 0-add_integer
-    >>> from 0-add_integer import add_integer
-   >>> add_integer(2, 5)
-   7
-
-import doctest
-doctest.testfile("0-add_integer.txt")

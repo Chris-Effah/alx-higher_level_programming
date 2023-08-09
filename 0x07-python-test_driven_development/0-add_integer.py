@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""a module of a function that adds integer"""
+"""
+a module of a function that adds two integer
+test cases written for this function
+
+"""
 
 
 def add_integer(a, b=98):
