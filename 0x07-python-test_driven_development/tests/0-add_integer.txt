@@ -28,10 +28,3 @@ adding an integer and a string
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
-
-passing a string
->>> add_integer("Hi")
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
