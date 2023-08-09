@@ -3,10 +3,19 @@
 
 
 def add_integer(a, b=98):
-    """add_integer: adds two integers
-       a: first arg
-       b: second arg
-       return result of addition
+    """
+    function that adds two integers
+
+    Args:
+        first arg: first number
+        second arg: second number
+
+    Returns:
+        int: result of addition
+
+    Raises:
+        TypeError: if a or b are not integers or floats.
+
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
