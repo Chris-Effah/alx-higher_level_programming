@@ -1,6 +1,19 @@
 #!/usr/bin/python3
+"""
+   a module that contains a function that divides all elements of a matrix
+"""
+
 
 def matrix_divided(matrix, div):
+    """
+       a function that divides all elements of a matrix
+
+       first arg:
+                 matrix
+
+       second arg:
+                  divisor
+    """
     if not isinstance(matrix, list) or \
        not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists)"
@@ -16,5 +29,5 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("dividion by zero")
 
-    new_matrix = [[round(element /div, 2) for element in row] for row in matrix]
-    return new_matrix
+    n_matrix = [[round(element / div, 2) for element in row] for row in matrix]
+    return n_matrix
