@@ -1,0 +1,14 @@
+this is a doctest file for the matrix divided function.
+
+importing the function from the module:
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+dividing a matrix by a divisor
+>>> matrix_divided([[10, 20, 30], [6, 12, 8]], 2)
+[[5.0, 10.0, 15.0], [3.0, 6.0, 4.0]]
+
+dividing a matrix by zero
+>>> matrix_divided([[10, 20, 30], [6, 12, 8]], 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
