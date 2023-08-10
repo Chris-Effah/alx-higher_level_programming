@@ -22,3 +22,9 @@ TypeError: last_name must be a string
 if only one name is provided
 >>> say_my_name("Chris")
 My name is Chris
+
+if no argument is provided
+>>> say_my_name(None)
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
