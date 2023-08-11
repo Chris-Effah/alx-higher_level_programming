@@ -1,0 +1,32 @@
+this is a doctest for the print a bunch of text
+
+importing the function from the module:
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+
+printing a line of text
+>>> text_indentation("hello")
+hello
+
+printing a line of text
+>>> text_indentation("hello. Chris")
+hello.
+Chris
+
+printing a line of text 2
+>>> text_indentation("hello. Chris. How are you?")
+hello.
+Chris.
+How are you?
+
+Empty string
+>>> text_indentation("")
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+not a string
+>>> text_indentation(2)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
