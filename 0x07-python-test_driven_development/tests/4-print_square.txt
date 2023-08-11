@@ -26,3 +26,9 @@ if size is a float and less than zero
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
+
+if no argument is passed
+>>> print_square(None)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
