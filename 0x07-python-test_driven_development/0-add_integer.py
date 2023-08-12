@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""
-a module of a function that adds two integer
+"""A module of a function that adds two integer
 test cases written for this function
-
 """
 
 
 def add_integer(a, b=98):
-    """
-    function that adds two integers
+    """Function that adds two integers
+        Returns the sum of the integers
     """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
