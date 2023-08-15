@@ -1,0 +1,18 @@
+this is a doctest file for the integer_validator
+
+importing the function from the module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+implementing the area
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+checking the validity of a value
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("name", "Chris")
+Traceback (most recent call last):
+    	      ...
+TypeError: name must be an integer
