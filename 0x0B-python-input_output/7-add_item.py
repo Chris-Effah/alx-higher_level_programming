@@ -22,7 +22,7 @@ def main():
     arguments = sys.argv[1:]
     try:
         data = load_from_json_file("add_item.json")
-    except:
+    except FileNotFoundError:
         data = []
     data.extend(arguments)
 
