@@ -12,14 +12,14 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-	new rectangle class initiated
+        new rectangle class initiated
 
         Args:
-            id(int): rectangle identity
-            width(int): width of the rectangle
-            height(int): height of the rectangle
-            x(int): x coordinnate
-            y(int): y coordinate
+            id: rectangle identity
+            width: width of the rectangle
+            height: height of the rectangle
+            x:x coordinnate
+            y: y coordinate
         """
 
         super().__init__(id)
@@ -30,12 +30,29 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """public getter"""
+        """
+        public getter
+
+        Parameters:
+        self
+
+        Returns:
+        obtained property of the width attribute
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """public setter"""
+        """
+        public setter
+
+        Parameters:
+        self
+        value
+
+        Returns:
+        set value of the width attribute
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -44,12 +61,29 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """public getter"""
+        """
+        public getter
+
+        Parameters:
+        self
+
+        Returns:
+        property of height attribute obtained
+        """
         return self.__height
 
     @height.setter
     def height(self, value):
-         """public setter"""
+        """
+        public setter
+
+        Parameters:
+        self
+        value
+
+        Returns:
+        set value of the height attribute
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -58,12 +92,29 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """public getter"""
+        """
+        public getter
+
+        Parameters:
+        self
+
+        Returns:
+        property of x attribute obtained
+        """
         return self.__x
 
     @x.setter
     def x(self, value):
-        """public setter"""
+        """
+        public setter
+
+        Parameters:
+        self
+        value
+
+        Returns:
+        set value of the x attribute
+        """
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -72,12 +123,29 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """public getter"""
+        """
+        public getter
+
+        Paramters:
+        self
+
+        Returns:
+        property of y obtained
+        """
         return self.__y
 
     @y.setter
     def y(self, value):
-        """public setter"""
+        """
+        public setter
+
+        Parameters:
+        self
+        value
+
+        Returns:
+        set value of attribute y
+        """
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
@@ -85,10 +153,27 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """public method for the area of a re
+        """
+        public method for the area of a rectangle
+
+        args:
+        self
+
+        returns:
+        area of rectangle
+        """
         return self.width * self.height
 
     def to_dictionary(self):
+        """
+        method to convert args of the rectangle class to a dict
+
+        Parameters:
+        self
+
+        Return:
+        dictionary representation of rectangle
+        """
         return {
             'id': self.id,
             'width': self.width,
