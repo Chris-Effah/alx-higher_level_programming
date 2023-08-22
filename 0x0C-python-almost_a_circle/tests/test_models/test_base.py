@@ -14,7 +14,6 @@ class BaseTest(unittest.TestCase):
         self.assertEqual(obj2.id, 2)
         self.assertEqual(obj3.id, 3)
 
-
     def test_id_assignment(self):
         obj_with_id = Base(id = 10)
 
