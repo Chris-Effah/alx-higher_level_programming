@@ -83,5 +83,3 @@ class Rectangle(Base):
             'x': self.x,
             'y': self.y
         }
-
-
