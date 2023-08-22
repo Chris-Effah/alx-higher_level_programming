@@ -164,6 +164,21 @@ class Rectangle(Base):
         """
         return self.width * self.height
 
+    def display(self):
+        """
+        public method to print the character # in stdout
+
+        Parameters:
+        self
+
+        Returns:
+        printed character #
+        """
+        for _ in range(self.__y):
+            print()
+        for _ in range(self.__height):
+            print(' ' * self.__x + '#' * self.__width)
+
     def to_dictionary(self):
         """
         method to convert args of the rectangle class to a dict
