@@ -1,8 +1,15 @@
 #!/usr/bin/python3
-"""my first calss base"""
+"""my first class base"""
 
 
 class Base:
+    """
+    this is the 'base' classs for all classes in this project
+
+    Private Class Attributes:
+    __nb_object (int): the number of instantiated bases
+    """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
