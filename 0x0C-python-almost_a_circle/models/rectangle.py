@@ -7,8 +7,7 @@ class Rectangle(Base):
     """a class that inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        new rectangle class initiated
+        """new rectangle class initiated
 
         Args:
             id: rectangle identity
