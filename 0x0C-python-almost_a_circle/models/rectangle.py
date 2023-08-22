@@ -196,3 +196,16 @@ class Rectangle(Base):
             'x': self.x,
             'y': self.y
         }
+
+    def __str__(self):
+        """
+        string method
+
+        Paramters:
+        self
+
+        Returns:
+        a string
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.__width, self.__height)
