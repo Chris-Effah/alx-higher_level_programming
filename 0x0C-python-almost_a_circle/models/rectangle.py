@@ -15,11 +15,11 @@ class Rectangle(Base):
 	new rectangle class initiated
 
         Args:
-            id: rectangle identity
-            width: width of the rectangle
-            height: height of the rectangle
-            x:x coordinnate
-            y: y coordinate
+            id(int): rectangle identity
+            width(int): width of the rectangle
+            height(int): height of the rectangle
+            x(int): x coordinnate
+            y(int): y coordinate
         """
 
         super().__init__(id)
@@ -85,7 +85,7 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """public method for the area of a rectangle"""
+        """public method for the area of a re
         return self.width * self.height
 
     def to_dictionary(self):
