@@ -3,7 +3,6 @@
 SELECT id
 FROM states
 WHERE name = 'California';
-
 -- List all cities in California
 SELECT cities.id, cities.name
 FROM cities
