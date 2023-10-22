@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
-a script that lists all states with a name starting with N from db using ORM
+a script that lists all values in the states from db using ORM
 """
+
 
 import MySQLdb
 from sys import argv
@@ -21,7 +22,7 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    query = "SELECT *FROM states WHERE name = %s ORDER BY id ASC"
+    query = "SELECT *FROM states WHERE name LIKE BINARY %s"
     cursor.execute(query, (state_name_searched,))
 
     states = cursor.fetchall()
