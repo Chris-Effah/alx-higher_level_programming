@@ -4,6 +4,7 @@ a script that lists all values in the states from db using ORM
 """
 
 import MySQLdb
+import sys
 from sys import argv
 
 if __name__ == "__main__":
