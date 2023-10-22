@@ -3,7 +3,6 @@
 a script that lists all values in the states from db using ORM
 """
 
-
 import MySQLdb
 from sys import argv
 
