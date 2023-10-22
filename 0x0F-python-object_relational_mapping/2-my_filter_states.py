@@ -10,7 +10,7 @@ if __name__ == "__main__":
     mysql_username = argv[1]
     mysql_password = argv[2]
     database_name = argv[3]
-    state_name_searched = argv[4]
+    state_name = argv[4]
 
     db = MySQLdb.connect(
             host="localhost",
@@ -18,11 +18,11 @@ if __name__ == "__main__":
             user=mysql_username,
             password=mysql_password,
             db=database_name
-    )
+            )
 
     cursor = db.cursor()
-    cursor.execute("SELECT *FROM states WHERE name LIKE BINARY '{}'"\
-            .format(sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
+                .format(sys.argv[4]))
     states = cursor.fetchall()
     for state in states:
         print(state)
