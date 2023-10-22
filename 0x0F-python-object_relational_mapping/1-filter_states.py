@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a python script that lists all states with a name starting with N from db using ORM
+a script that lists all states with a name starting with N from db using ORM
 """
 
 import MySQLdb
