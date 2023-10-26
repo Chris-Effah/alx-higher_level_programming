@@ -27,7 +27,7 @@ if __name__ == "__main__":
              WHERE states.name=%s"""
     cursor.execute(query, (state_name,))
     cities = cursor.fetchall()
-    for city in cities:
-        print(city)
+    tmp = list(cities[0] for city in cities)
+    print(*tmp, sep=", ")
     cursor.close()
     db.close()
