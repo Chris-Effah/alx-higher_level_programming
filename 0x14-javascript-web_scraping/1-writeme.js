@@ -11,6 +11,4 @@ if (!filePath || !contentToWrite) {
 
 try {
   fs.writeFileSync(filePath, contentToWrite, 'utf-8');
-} catch (error) {
-  console.error(`An error occurred while writing to the file: ${error}`);
-}
+} catch (error)
