@@ -25,7 +25,6 @@ request.get({ url, encoding: 'utf-8' }, (error, response, body) => {
   fs.writeFile(filePath, body, 'utf-8', (err) => {
     if (err) {
       console.error(`Error writing to file: ${err}`);
-      return;
     }
   });
 });
