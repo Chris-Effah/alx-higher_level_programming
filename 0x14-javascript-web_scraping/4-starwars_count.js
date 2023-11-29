@@ -2,17 +2,17 @@
 
 const request = require('request');
 
-const url = process.argv[2];
-const characterId = '18';
+const apiUrl = process.argv[2]; // API URL from command line argument
+const characterId = '18'; // Character ID for Wedge Antilles
 
-if (!url) {
-  console.log('Usage: node script_name.js URL');
+if (!apiUrl) {
+  console.log('Usage: node script_name.js API_URL');
   process.exit(1);
 }
 
-const characterURL = `${url}${characterId}`;
+const characterUrl = `${apiUrl}${characterId}`;
 
-request.get(characterURL, (error, response, body) => {
+request.get(characterUrl, (error, response, body) => {
   if (error) {
     console.error(`An error occurred while making the request: ${error}`);
     return;
@@ -27,7 +27,7 @@ request.get(characterURL, (error, response, body) => {
     const characterData = JSON.parse(body);
     const moviesWithCharacter = characterData.films.length;
 
-    console.log(moviesWithCharacter);
+    console.log(`Number of movies where Wedge Antilles is present: ${moviesWithCharacter}`);
   } catch (parseError) {
     console.error(`Error parsing response body: ${parseError}`);
   }
